@@ -23,18 +23,18 @@ function getRandomPhraseAsArray(arr) {
     var a =  arr[Math.floor(Math.random() * 6)];
     const b = [];
     
-    for (let i = 0; i < a.length; i += 1) {
+    for (let i = 0; i < a.length; i++) {
         b.push(a.charAt(i));
     }
 
     return b
 }
 
-// Put the hidden phrase on the page/board
+// Get a random phrase
 
 function addPhraseToDisplay(arr){
 
-    for (let i = 0; i < arr.length; i += 1) {
+    for (let i = 0; i < arr.length; i++) {
         const letter = document.querySelector("#phrase ul");
         const li = document.createElement("li");
         
@@ -63,7 +63,7 @@ startGame.addEventListener("click", () => {
 
     const reset_qwerty = document.querySelectorAll(".keyrow button");
 
-    for (let i = 0; i < reset_qwerty.length; i += 1) {
+    for (let i = 0; i < reset_qwerty.length; i++) {
         reset_qwerty[i].className = " ";
         reset_qwerty[i].removeAttribute("disabled");
     }
@@ -72,7 +72,7 @@ startGame.addEventListener("click", () => {
 
     const tries = document.querySelectorAll(".tries");
             
-    for (let i = 0; i < tries.length; i += 1) {
+    for (let i = 0; i < tries.length; i++) {
         tries[i].firstChild.setAttribute("src","images/liveHeart.png");
     }
         missed = 0;
@@ -88,7 +88,7 @@ function checkLetter (chosen_letter) {
     const letters = document.querySelectorAll(".letter");
     let letterFound = "null";
 
-    for (let i = 0; i < letters.length; i += 1) {
+    for (let i = 0; i < letters.length; i++) {
          if (selected_letter === letters[i].textContent) {
             letterFound = selected_letter;
             letters[i].className += " show";
