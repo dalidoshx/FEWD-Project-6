@@ -104,7 +104,7 @@ function checkWin() {
     const shown_letters = document.querySelectorAll(".show");
     const status_message = startScreen.firstChild.nextElementSibling;
     const cta_replay = startScreen.lastChild.previousElementSibling;
-    
+
     if (letters.length === shown_letters.length) {
         startScreen.style.display = "flex";
         startScreen.className = "win";
