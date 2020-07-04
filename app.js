@@ -54,12 +54,12 @@ function addPhraseToDisplay(arr){
 startGame.addEventListener("click", () => {
     startScreen.style.display = "none";
 
-        // Resets the phrases to guess
+// Resets the phrases to guess
 
     const letter = document.querySelector("#phrase ul");
         letter.textContent = "";
 
-        // Resets styling of the buttons to default
+// Resets styling of the buttons to default
 
     const reset_qwerty = document.querySelectorAll(".keyrow button");
 
@@ -68,7 +68,7 @@ startGame.addEventListener("click", () => {
         reset_qwerty[i].removeAttribute("disabled");
     }
 
-        // Resets hearts images to default (5 lifes)
+// Resets hearts images to default (5 lifes)
 
     const tries = document.querySelectorAll(".tries");
             
