@@ -119,6 +119,14 @@ button {
   font-size: var(--font-size-medium);
 }
 
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: coral;
+}
+
 /* Overlay */
 
 #overlay {
