@@ -6,11 +6,11 @@
 :root {
   --color-win: #78CF82;
   --color-lose: #D94545;
-  --color-start: #5b85b7;
-  --color-neutral: skyblue;
+  --color-start: #5B85B7;
+  --color-neutral: #87CEEB;
   --color-neutral-light: #E5E5E5;
-  --color-keys: #7a7a85;
-  --color-keys-light: #e7e7e77a;
+  --color-keys: #7A7A85;
+  --color-keys-light: #E7E7E77A;
   --font-size-large: 60px;
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out;
@@ -94,7 +94,7 @@ button {
 
 .show {
   color: white;
-  background-color: skyblue;
+  background-color: #87CEEB;
 }
 
 /* Keyboard */
@@ -155,7 +155,10 @@ button {
 }
 
 .start a {
-  color: var(--color-win);
+  color: #5B85B7;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .win {
@@ -164,6 +167,9 @@ button {
 
 .win a {
   color: var(--color-win);
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .lose {
@@ -172,4 +178,7 @@ button {
 
 .lose a {
   color: var(--color-lose);
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 700;
 }
