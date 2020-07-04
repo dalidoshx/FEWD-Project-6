@@ -108,14 +108,14 @@ function checkWin() {
     if (letters.length === shown_letters.length) {
         startScreen.style.display = "flex";
         startScreen.className = "win";
-        status_message.textContent = "YOU WON!!!";
+        status_message.textContent = "YOU WON !!!";
         cta_replay.textContent = "Play Again";
     } 
     
     if (missed >= 5) {
         startScreen.style.display = "flex";
         startScreen.className = "lose";
-        status_message.textContent = "YOU LOST!!!";
+        status_message.textContent = "YOU LOST !!!";
         cta_replay.textContent = "Play Again";
     }
 }
